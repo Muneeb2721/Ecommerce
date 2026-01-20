@@ -1,26 +1,138 @@
 @import "tailwindcss";
 
+/* =============================
+   FONTS (self-hosted example)
+   ============================= */
+
+/* Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Poppins */
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* CSS variables for easy use */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Font Family */
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+
+  /* Colors for easy use */
+  --color-primary: #B88E2F;
+  /* --color-black: #000000;
+  --color-white: #FFFFFF; */
+  --color-dark: #333333;
+  --color-gray1: #3A3A3A;
+  --color-gray2: #616161;
+  --color-gray3: #898989;
+  --color-gray4: #B0B0B0;
+  --color-gray5: #9F9F9F;
+  --color-gray6: #242424;
+  --color-gray7: #727272;
+  --color-gray: #666666;
+  --color-cream: #F9F1E7;      /* new cream color */
+  --color-light-gray: #D9D9D9; /* new light gray color */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Default body font */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+  margin: 0;
+  line-height: 1.5;
 }
+
+/* =============================
+   SEMANTIC FONT SIZES WITH UTILITY CLASSES
+   ============================= */
+
+/* Hero / Main Titles */
+.text-52 { font-size: 52px; font-weight: 700; }
+.text-48 { font-size: 48px; font-weight: 700; }
+
+/* Section / Component Headings */
+.text-42 { font-size: 42px; font-weight: 700; }
+.text-40 { font-size: 40px; font-weight: 700; }
+.text-36 { font-size: 36px; font-weight: 700; }
+.text-34 { font-size: 34px; font-weight: 700; }
+.text-32 { font-size: 32px; font-weight: 700; }
+.text-30 { font-size: 30px; font-weight: 700; }
+.text-28 { font-size: 28px; font-weight: 700; }
+.text-25 { font-size: 25px; font-weight: 600; }
+.text-24 { font-size: 24px; font-weight: 700; }
+
+/* Component / Body Text */
+.text-20 { font-size: 20px; font-weight: 400; }
+.text-19 { font-size: 19px; font-weight: 400; }
+.text-16 { font-size: 16px; font-weight: 400; }
+.text-16-medium { font-size: 16px; font-weight: 500; }
+.text-16-bold { font-size: 16px; font-weight: 700; }
+.text-15 { font-size: 15px; font-weight: 400; }
+.text-14 { font-size: 14px; font-weight: 500; }
+.text-13 { font-size: 13px; font-weight: 400; }
+.text-12 { font-size: 12px; font-weight: 400; }
+
+/* =============================
+   OPTIONAL: Semantic defaults
+   ============================= */
+h1 { font-weight: 700; }
+h2 { font-weight: 700; }
+h3 { font-weight: 700; }
+h4 { font-weight: 700; }
+h5 { font-weight: 600; }
+h6 { font-weight: 400; }
+p  { font-weight: 400; }
+small, span { font-weight: 400; }
+button { font-weight: 500; }
+
+/* Text helper classes */
+.text-primary { color: var(--color-primary); }
+/* .text-black { color: var(--color-black); }
+.text-white { color: var(--color-white); } */
+.text-dark { color: var(--color-dark); }
+.text-gray1 { color: var(--color-gray1); }
+.text-gray2 { color: var(--color-gray2); }
+.text-gray3 { color: var(--color-gray3); }
+.text-gray4 { color: var(--color-gray4); }
+.text-gray5 { color: var(--color-gray5); }
+.text-gray6 { color: var(--color-gray6); }
+.text-gray7 { color: var(--color-gray7); }
+.text-gray { color: var(--color-gray); }
+.text-cream { color: var(--color-cream); }
+.text-light-gray { color: var(--color-light-gray); }
+
+/* Background helper classes */
+.bg-primary { background-color: var(--color-primary); }
+/* .bg-black { background-color: var(--color-black); }
+.bg-white { background-color: var(--color-white); } */
+.bg-dark { background-color: var(--color-dark); }
+.bg-gray1 { background-color: var(--color-gray1); }
+.bg-gray2 { background-color: var(--color-gray2); }
+.bg-gray3 { background-color: var(--color-gray3); }
+.bg-gray4 { background-color: var(--color-gray4); }
+.bg-gray5 { background-color: var(--color-gray5); }
+.bg-gray6 { background-color: var(--color-gray6); }
+.bg-gray7 { background-color: var(--color-gray7); }
+.bg-gray { background-color: var(--color-gray); }
+.bg-cream { background-color: var(--color-cream); }
+.bg-light-gray { background-color: var(--color-light-gray); }
