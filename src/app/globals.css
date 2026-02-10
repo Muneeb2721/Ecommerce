@@ -40,8 +40,8 @@
 
   /* Colors for easy use */
   --color-primary: #B88E2F;
-  /* --color-black: #000000;
-  --color-white: #FFFFFF; */
+  --color-black: #000000;
+  --color-white: #FFFFFF;
   --color-dark: #333333;
   --color-gray1: #3A3A3A;
   --color-gray2: #616161;
@@ -84,21 +84,23 @@ body {
 /* Component / Body Text */
 .text-20 { font-size: 20px; font-weight: 400; }
 .text-19 { font-size: 19px; font-weight: 400; }
-.text-16 { font-size: 16px; font-weight: 400; }
+.text-16 { font-size: 16px; font-weight: 400; } 
 .text-16-medium { font-size: 16px; font-weight: 500; }
 .text-16-bold { font-size: 16px; font-weight: 700; }
 .text-15 { font-size: 15px; font-weight: 400; }
 .text-14 { font-size: 14px; font-weight: 500; }
 .text-13 { font-size: 13px; font-weight: 400; }
 .text-12 { font-size: 12px; font-weight: 400; }
+.text-12-light { font-size: 12px; font-weight: lighter; }
+.text-12-bold { font-size: 12px; font-weight: 700; }
 
 /* =============================
    OPTIONAL: Semantic defaults
    ============================= */
 h1 { font-weight: 700; }
 h2 { font-weight: 700; }
-h3 { font-weight: 700; }
-h4 { font-weight: 700; }
+h3 { font-weight: 600; }
+h4 { font-weight: 600; }
 h5 { font-weight: 600; }
 h6 { font-weight: 400; }
 p  { font-weight: 400; }
@@ -107,8 +109,8 @@ button { font-weight: 500; }
 
 /* Text helper classes */
 .text-primary { color: var(--color-primary); }
-/* .text-black { color: var(--color-black); }
-.text-white { color: var(--color-white); } */
+.text-black { color: var(--color-black); }
+.text-white { color: var(--color-white); }
 .text-dark { color: var(--color-dark); }
 .text-gray1 { color: var(--color-gray1); }
 .text-gray2 { color: var(--color-gray2); }
@@ -123,8 +125,8 @@ button { font-weight: 500; }
 
 /* Background helper classes */
 .bg-primary { background-color: var(--color-primary); }
-/* .bg-black { background-color: var(--color-black); }
-.bg-white { background-color: var(--color-white); } */
+.bg-black { background-color: var(--color-black); }
+.bg-white { background-color: var(--color-white); }
 .bg-dark { background-color: var(--color-dark); }
 .bg-gray1 { background-color: var(--color-gray1); }
 .bg-gray2 { background-color: var(--color-gray2); }
@@ -136,3 +138,27 @@ button { font-weight: 500; }
 .bg-gray { background-color: var(--color-gray); }
 .bg-cream { background-color: var(--color-cream); }
 .bg-light-gray { background-color: var(--color-light-gray); }
+
+/* Border helper classes */
+.border-primary { border-color: var(--color-primary); }
+
+/* Hover classes */
+.bg-primary-hover:hover {
+  background-color: var(--color-primary);
+}
+
+.bg-cream-hover:hover {
+  background-color: var(--color-cream);
+}
+
+.text-white-hover:hover {
+  color: white;
+}
+
+.border-primary-hover:hover { 
+  border-color: var(--color-primary); 
+}
+
+.border-cream-hover:hover { 
+  border-color: var(--color-cream); 
+}
