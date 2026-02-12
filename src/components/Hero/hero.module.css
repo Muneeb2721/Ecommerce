@@ -1,0 +1,7 @@
+ .image {
+    background-image: url('/images/hero/hero-background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* backdrop-filter: blur(6px); */
+}
