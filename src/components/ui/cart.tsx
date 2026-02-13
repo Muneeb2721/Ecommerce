@@ -26,7 +26,123 @@ const ShoppingCart = () => {
             <hr className="w-[287px] ml-9 mt-6 h-0 border border-[#D9D9D9]" />
 
             {/* Products goes here */}
-            <div className="">
+            <div className="max-h-[400px] overflow-auto">
+                <div className="flex justify-between items-center px-9 mt-10">
+                    <div className="flex items-center bg-primary rounded-[10px] w-[105px] h-[105px]">
+                        <Image 
+                            src="images\furnitureProducts\AsgaardSofa3.svg"
+                            alt="Asgaard Sofa 3"
+                            width="112"
+                            height="90"
+                            className=""
+                        />
+                    </div>
+                    <div className="">
+                        <h4 className="text-16">
+                            Asgaard sofa 
+                        </h4>
+                        <p className="text-16">
+                            1 {"  "} <span className="text-12-light">x</span> {"  "} <span className="text-primary text-12-bold">Rs. 250,000.00</span>
+                        </p>
+                    </div>
+                    <div className="">
+                        <Image 
+                            src="images\icons\cancel.svg"
+                            alt="Icon to delete Cart Item"
+                            width="20"
+                            height="20"
+                            className="cursor-pointer"
+                        />
+                    </div>
+                </div>
+
+                <div className="flex justify-between items-center px-9 mt-10">
+                    <div className="flex items-center bg-primary rounded-[10px] w-[105px] h-[105px]">
+                        <Image 
+                            src="images\furnitureProducts\AsgaardSofa3.svg"
+                            alt="Asgaard Sofa 3"
+                            width="112"
+                            height="90"
+                            className=""
+                        />
+                    </div>
+                    <div className="">
+                        <h4 className="text-16">
+                            Asgaard sofa 
+                        </h4>
+                        <p className="text-16">
+                            1 {"  "} <span className="text-12-light">x</span> {"  "} <span className="text-primary text-12-bold">Rs. 250,000.00</span>
+                        </p>
+                    </div>
+                    <div className="">
+                        <Image 
+                            src="images\icons\cancel.svg"
+                            alt="Icon to delete Cart Item"
+                            width="20"
+                            height="20"
+                            className="cursor-pointer"
+                        />
+                    </div>
+                </div>
+
+                <div className="flex justify-between items-center px-9 mt-10">
+                    <div className="flex items-center bg-primary rounded-[10px] w-[105px] h-[105px]">
+                        <Image 
+                            src="images\furnitureProducts\AsgaardSofa3.svg"
+                            alt="Asgaard Sofa 3"
+                            width="112"
+                            height="90"
+                            className=""
+                        />
+                    </div>
+                    <div className="">
+                        <h4 className="text-16">
+                            Asgaard sofa 
+                        </h4>
+                        <p className="text-16">
+                            1 {"  "} <span className="text-12-light">x</span> {"  "} <span className="text-primary text-12-bold">Rs. 250,000.00</span>
+                        </p>
+                    </div>
+                    <div className="">
+                        <Image 
+                            src="images\icons\cancel.svg"
+                            alt="Icon to delete Cart Item"
+                            width="20"
+                            height="20"
+                            className="cursor-pointer"
+                        />
+                    </div>
+                </div>
+
+                <div className="flex justify-between items-center px-9 mt-10">
+                    <div className="flex items-center bg-primary rounded-[10px] w-[105px] h-[105px]">
+                        <Image 
+                            src="images\furnitureProducts\AsgaardSofa3.svg"
+                            alt="Asgaard Sofa 3"
+                            width="112"
+                            height="90"
+                            className=""
+                        />
+                    </div>
+                    <div className="">
+                        <h4 className="text-16">
+                            Asgaard sofa 
+                        </h4>
+                        <p className="text-16">
+                            1 {"  "} <span className="text-12-light">x</span> {"  "} <span className="text-primary text-12-bold">Rs. 250,000.00</span>
+                        </p>
+                    </div>
+                    <div className="">
+                        <Image 
+                            src="images\icons\cancel.svg"
+                            alt="Icon to delete Cart Item"
+                            width="20"
+                            height="20"
+                            className="cursor-pointer"
+                        />
+                    </div>
+                </div>
+
                 <div className="flex justify-between items-center px-9 mt-10">
                     <div className="flex items-center bg-primary rounded-[10px] w-[105px] h-[105px]">
                         <Image 
